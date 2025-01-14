@@ -17,7 +17,7 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       watermark_image_url = "assets/images/golem.svg", // Optional. If image file is in same directory as config, can be just the filename
       page_title = "",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "Blocked Canal measurments. Use with caution, if at all.",
-      accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
+      accessories = false,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
       expandable = false,                           // Enables button to expand iframe over the top of the parent page
       expandableOnly = false,                       // Prevents iframe interactions unless the user has expanded it. Accepts "true" or "false" OR a pixel value; if pixel value, that is used as the maximum width at which expandableOnly is used
@@ -214,7 +214,7 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "Blocked Canal",
+let headerLogoText = "",
 headerLogoImgUrl = "assets/images/golem.svg",
 headerLinks = [
 {
