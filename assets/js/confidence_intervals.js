@@ -53,7 +53,7 @@ function calculateConfidenceIntervals(rawChannels) {
   }
   
   // uncomment one at a time to download the lower and upper bounds, limitations of browser
-  // downloadFile(lowerBounds, 'lower_bounds.txt');
+  downloadFile(lowerBounds, 'lower_bounds.txt');
   // downloadFile(upperBounds, 'upper_bounds.txt');
   return [upperBounds, lowerBounds];
 }
