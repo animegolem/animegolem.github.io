@@ -387,15 +387,15 @@ yAxisObj.insert("text")
 
 
 // x axis
-let xvals = [2,3,4,5,6,8,10,15];
+let xvals = [2,3,4,5,6,7,8,9,10];
 let xAxis = d3.axisBottom(x)
     .tickSize(H+3).tickSizeOuter(0)
-    .tickValues(d3.merge([1,2,3].map(e=>xvals.map(m=>m*Math.pow(10,e)))).concat([250,20000]))
+    .tickValues(d3.merge([1,2,3].map(e=>xvals.map(m=>m*Math.pow(10,e)))).concat([20000]))
     .tickFormat(f => f>=1000 ? (f/1000)+"k" : f);
 
-let tickPattern = [3,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,3,0,3,0,0,0,3],
+let tickPattern = [3,0,0,1,0,0,0,0,1,3,0,0,1,0,0,0,0,1,3,0,0,1,0,0,0,0,1,3],
     getTickType = i => i =  tickPattern[i],
-    tickThickness = [2,4,4,9,15].map(t=>t/10);
+    tickThickness = [3,4,4,9,15].map(t=>t/10);
 
 function fmtX(xa) {
     xAxis(xa);
@@ -403,11 +403,15 @@ function fmtX(xa) {
     xa.selectAll(".tick line")
       .attr("stroke", "#333")
       .attr("stroke-width", (_,i) => tickThickness[getTickType(i)])
-      .attr("opacity", "0.6");
+      .attr("opacity", "0.75");
     xa.selectAll(".tick text").filter((_,i) => tickPattern[i] === 0)
       .attr("font-size","92%")
       .attr("font-weight","lighter")
-      .attr("opacity", "0.5");
+      .attr("opacity", "0.0");
+      xa.selectAll(".tick text").filter((_,i) => tickPattern[i] === 1)
+      .attr("font-size","92%")
+      .attr("font-weight","lighter")
+      .attr("opacity", "0.75");
     xa.selectAll(".tick text").filter((_,i) => tickPattern[i] != 0)
       //.attr("font-size","92%")
       .attr("font-weight","lighter")
