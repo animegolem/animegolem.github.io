@@ -214,7 +214,7 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "Test",
+let headerLogoText = "",
 headerLogoImgUrl = "assets/images/golem.svg",
 headerLinks = [
 {
