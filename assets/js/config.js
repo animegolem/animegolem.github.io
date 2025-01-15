@@ -14,7 +14,7 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
       watermark_text = "",              // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/golem.svg", // Optional. If image file is in same directory as config, can be just the filename
+      watermark_image_url = "assets/images/transparent.svg", // Optional. If image file is in same directory as config, can be just the filename
       page_title = "",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "Blocked Canal measurments. Use with caution, if at all.",
       accessories = false,                           // If true, displays specified HTML at the bottom of the page. Configure further below
@@ -33,8 +33,8 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       extraEQEnabled = true,                        // Enable parametic eq function
       extraEQBands = 20,                            // Default EQ bands available
       extraEQBandsMax = 50;                         // Max EQ bands available
-      // num_samples = 13,                              // Number of samples to average for smoothing
-      // scale_smoothing = 0.2;                        // Smoothing factor for scale transitions
+      num_samples = 13,                              // Number of samples to average for smoothing
+      Scale_smoothing = 0.2;                        // Smoothing factor for scale transitions
 
 // Specify which targets to display
 const targets = [
@@ -217,7 +217,7 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "",
-headerLogoImgUrl = "assets/images/golem.svg",
+headerLogoImgUrl = "assets/images/transparent.svg",
 headerLinks = [
 {
     name: "How to build your own PIRATE in-ear microphones (WIP)",
