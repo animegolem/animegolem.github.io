@@ -1,19 +1,19 @@
 
 /* Primary color theme */
 :root {
-    --accent-color: hsl(0, 0%, 100%);
-    --accent-color-contrast: hsl(0, 0%, 50%);
+    --accent-color: hsl(90, 100, 84);
+    --accent-color-contrast: hsl(68, 100, 30);
 
-    --background-color: hsl(0, 0%, 6%);
-    --background-color-contrast: hsl(0, 0%, 15%);
-    --background-color-contrast-more: hsl(0, 0%, 30%);
-    --background-color-graph: hsl(0, 0%, 8%);
+    --background-color: hsl(192, 100, 11);
+    --background-color-contrast: hsl(185, 100, 8);
+    --background-color-contrast-more: hsl(175, 100, 6);
+    --background-color-graph: hsl(192, 81, 14);
 
     --background-color-inputs: hsl(0, 0%, 15%);
 
-    --font-color-primary: hsl(0, 0%, 80%);
-    --font-color-secondary: hsl(0, 0%, 0%);
-    --font-color-inputs: hsl(0, 0%, 60%);
+    --font-color-primary: hsl(196, 13, 45);
+    --font-color-secondary: hsl(194, 14, 40);
+    --font-color-inputs: hsl(180, 7, 70);
 
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: monospace;
