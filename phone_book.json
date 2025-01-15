@@ -1,24 +1,5 @@
 [
   {
-    "name":   "Audeze",
-    "phones": [
-        {"name":"Maxwell","file":["Maxwell"]}
-    ]
-  },
-  {
-    "name":   "Capra Audio",
-    "phones": [
-        {"name":"Faunus","file":["Fanus (KPH40)"]},
-        {"name":"Ouroboros var Golem","file":["Ouroboros var Golem"]}
-    ]
-  },
-  {
-    "name":   "Sennheiser",
-    "phones": [
-        {"name":"Momentum Wired","file":["Momentum Wired"]}
-    ]
-  },
-  {
     "name":   "Sony",
     "phones": [
         {"name":"MDR-MV1","file":["MDR-MV1 S1", "MDR-MV1 S2", "MDR-MV1 S3", "MDR-MV1 S4", "MDR-MV1 S5", "MDR-MV1 S6", "MDR-MV1 S7", "MDR-MV1 S8", "MDR-MV1 S9", "MDR-MV1 S10", "MDR-MV1 S11", "MDR-MV1 S12", "MDR-MV1 S13"]}
