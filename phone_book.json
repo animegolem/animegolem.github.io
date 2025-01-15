@@ -1,5 +1,11 @@
 [
   {
+    "name":   "Sennheiser",
+    "phones": [
+        {"name":"Momentum 1.0","file":["Momentum 1.0"]}
+    ]
+  },
+  {
     "name":   "Sony",
     "phones": [
         {"name":"MDR-MV1","file":["MDR-MV1"]}
