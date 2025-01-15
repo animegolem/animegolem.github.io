@@ -21,7 +21,7 @@
   {
     "name":   "Sony",
     "phones": [
-        {"name":"MDR-MV1","file":["MDR-MV1"]}
+        {"name":"MDR-MV1","file":["MDR-MV1 Seatiing 1", "MDR-MV1 Seatiing 2", "MDR-MV1 Seatiing 3", "MDR-MV1 Seatiing 4", "MDR-MV1 Seatiing 5", "MDR-MV1 Seatiing 6", "MDR-MV1 Seatiing 7", "MDR-MV1 Seatiing 8", "MDR-MV1 Seatiing 9", "MDR-MV1 Seatiing 10", "MDR-MV1 Seatiing 11", "MDR-MV1 Seatiing 12", "MDR-MV1 Seatiing 13"]}
     ]
   }
 ]
