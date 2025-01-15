@@ -1,5 +1,11 @@
 [
   {
+    "name":   "Audeze",
+    "phones": [
+        {"name":"Maxwell","file":["Maxwell"]}
+    ]
+  },
+  {
     "name":   "Capra Audio",
     "phones": [
         {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]}
