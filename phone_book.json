@@ -8,6 +8,7 @@
   {
     "name":   "Capra Audio",
     "phones": [
+        {"name":"Faunus","file":["Fanus (KPH40)"]},
         {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]}
     ]
   },
