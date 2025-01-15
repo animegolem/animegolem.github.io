@@ -1,5 +1,11 @@
 [
   {
+    "name":   "Capra Audio",
+    "phones": [
+        {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]}
+    ]
+  },
+  {
     "name":   "Sennheiser",
     "phones": [
         {"name":"Momentum 1.0","file":["Momentum 1.0"]}
