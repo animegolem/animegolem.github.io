@@ -33,7 +33,7 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       extraEQEnabled = true,                        // Enable parametic eq function
       extraEQBands = 20,                            // Default EQ bands available
       extraEQBandsMax = 50;                         // Max EQ bands available
-      num_samples = 13,                              // Number of samples to average for smoothing
+      num_samples = 25,                              // Number of samples to average for smoothing
       Scale_smoothing = 0.2;                        // Smoothing factor for scale transitions
 
 // Specify which targets to display
