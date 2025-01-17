@@ -13,6 +13,12 @@
     ]
   },
   {
+    "name":   "Koss",
+    "phones": [
+        {"name":"Porta Pro","file":["Porta Pro","Porta Pro (Yaxi)"]}
+    ]
+  },
+  {
     "name":   "Sennheiser",
     "phones": [
         {"name":"Momentum 1.0","file":["Momentum 1.0"]}
