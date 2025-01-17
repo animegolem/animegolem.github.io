@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -13,10 +13,10 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       alt_tutorial = false,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "DIY PIRATE Blocked Canal",              // Optional. Watermark appears behind graphs
+      watermark_text = "",              // Optional. Watermark appears behind graphs
       watermark_image_url = "assets/images/golem.svg", // Optional. If image file is in same directory as config, can be just the filename
       page_title = "",                  // Optional. Appended to the page title if share URLs are enabled
-      page_description = "Blocked Canal measurments. Use with caution, if at all.",
+      page_description = "DIY Pirate blocked canal measurements. Use at your own risk.",
       accessories = false,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
       expandable = false,                           // Enables button to expand iframe over the top of the parent page
@@ -31,8 +31,8 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       extraEnabled = true,                          // Enable extra features
       extraUploadEnabled = true,                    // Enable upload function
       extraEQEnabled = true,                        // Enable parametic eq function
-      extraEQBands = 20,                            // Default EQ bands available
-      extraEQBandsMax = 50;                         // Max EQ bands available
+      extraEQBands = 10,                            // Default EQ bands available
+      extraEQBandsMax = 20,                         // Max EQ bands available
       num_samples = 25,                              // Number of samples to average for smoothing
       Scale_smoothing = 0.2;                        // Smoothing factor for scale transitions
 
@@ -46,17 +46,17 @@ const targets = [
 const  preference_bounds_name = "Bounds",  // Preference bounds name
        preference_bounds_dir = "assets/pref_bounds/",  // Preference bounds directory
        preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
-       allowSquigDownload = true,                     // If true, allows download of measurement data
+       allowSquigDownload = false,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "Golem HRTF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 2,                         // Default Custom DF bass shelf value
+       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
        default_tilt = -0.5,                            // Default Custom DF tilt value
-       default_ear = 0,                                // Default Custom DF ear gain value
-       default_treble = -5,                             // Default Custom DF treble gain value
-       tiltableTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Golem HRTF"],                 // Targets that are allowed to be tilted
-       compTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Golem HRTF"],                     // Targets that are allowed to be used for compensation
+       default_ear = 3,                                // Default Custom DF ear gain value
+       default_treble = 3,                             // Default Custom DF treble gain value
+       tiltableTargets = ["Golem HRTF","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
+       compTargets = ["Golem HRTF","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
@@ -102,7 +102,7 @@ function watermark(svg) {
         .attr("opacity",0.2)
         .append("text")
         .attrs({x:765, y:314, "font-size":10, "text-anchor":"end", "class":"site_name"})
-        .text("DIY PIRATE Blocked");
+        .text("DIY Pirate Blocked Canal");
 }
 
 
@@ -140,12 +140,13 @@ function setLayout() {
 setLayout();
 
 
+
 // Configure HTML accessories to appear at the bottom of the page. Displayed only if accessories (above) is true
 // There are a few templates here for ease of use / examples, but these variables accept any HTML
 const 
     // Short text, center-aligned, useful for a little side info, credits, links to measurement setup, etc. 
     simpleAbout = `
-        <p class="center">This graph database is a test</p>
+        <p class="center">This graph database is maintained by HarutoHiroki with frequency responses generated via an "IEC60318-4"-compliant ear simulator. This web software is based on a heavily modified version of the <a href="https://github.com/mlochbaum/CrinGraph">CrinGraph</a> open source software project, with <a href="https://www.teachmeaudio.com/mixing/techniques/audio-spectrum">Audio Spectrum</a>'s definition source.</p>
     `
     ;
     // Which of the above variables to actually insert into the page
@@ -217,16 +218,12 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "",
-headerLogoImgUrl = "assets/images/transparent.svg",
-headerLinks = [
-{
-    name: "How to build your own PIRATE in-ear microphones (WIP)",
-    url: "https://github.com/animegolem/pirate-extensions-extended"
-}
-//  {
-//      name: "Donate",
-//      url: "https://ko-fi.com/harutohiroki"
-//  },
+    headerLogoImgUrl = "assets/images/transparent.svg",
+    headerLinks = [
+    {
+        name: "How to build your own PIRATE in-ear microphones (WIP)",
+        url: "https://github.com/animegolem/pirate-extensions-extended"
+    }
 ];
 let whichHeaderLogoTextToUse = headerLogoText;
 let whichHeaderLogoImgUrlToUse = headerLogoImgUrl;
