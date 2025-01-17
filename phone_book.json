@@ -2,6 +2,7 @@
   {
     "name":   "Audeze",
     "phones": [
+        {"name":"LCD-X","file":["LCD-X"]},
         {"name":"Maxwell","file":["Maxwell"]}
     ]
   },
