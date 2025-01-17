@@ -13,7 +13,7 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
       alt_tutorial = false,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "",              // Optional. Watermark appears behind graphs
+      watermark_text = "DIY PIRATE Blocked Canal",              // Optional. Watermark appears behind graphs
       watermark_image_url = "assets/images/golem.svg", // Optional. If image file is in same directory as config, can be just the filename
       page_title = "",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "Blocked Canal measurments. Use with caution, if at all.",
@@ -102,7 +102,7 @@ function watermark(svg) {
         .attr("opacity",0.2)
         .append("text")
         .attrs({x:765, y:314, "font-size":10, "text-anchor":"end", "class":"site_name"})
-        .text("DIY PIRATE Blocked Canal");
+        .text("DIY PIRATE Blocked");
 }
 
 
