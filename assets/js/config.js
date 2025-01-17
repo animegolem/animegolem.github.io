@@ -17,12 +17,12 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
       watermark_image_url = "assets/images/golem.svg", // Optional. If image file is in same directory as config, can be just the filename
       page_title = "",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "DIY Pirate blocked canal measurements. Use at your own risk.",
-      accessories = false,                           // If true, displays specified HTML at the bottom of the page. Configure further below
+      accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
       expandable = false,                           // Enables button to expand iframe over the top of the parent page
       expandableOnly = false,                       // Prevents iframe interactions unless the user has expanded it. Accepts "true" or "false" OR a pixel value; if pixel value, that is used as the maximum width at which expandableOnly is used
       headerHeight = '0px',                         // Optional. If expandable=true, determines how much space to leave for the parent page header
-      darkModeButton = false,                        // Adds a "Dark Mode" button the main toolbar to let users set preference
+      darkModeButton = true,                        // Adds a "Dark Mode" button the main toolbar to let users set preference
       targetDashed = true,                          // If true, makes target curves dashed lines
       targetColorCustom = false,                    // If false, targets appear as a random gray value. Can replace with a fixed color value to make all targets the specified color, e.g. "black"
       labelsPosition = "bottom-left",               // Up to four labels will be grouped in a specified corner. Accepts "top-left," bottom-left," "bottom-right," and "default"
@@ -51,9 +51,9 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "Golem HRTF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
+       default_bass_shelf = 3,                         // Default Custom DF bass shelf value
        default_tilt = -0.5,                            // Default Custom DF tilt value
-       default_ear = 3,                                // Default Custom DF ear gain value
+       default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 3,                             // Default Custom DF treble gain value
        tiltableTargets = ["Golem HRTF","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
        compTargets = ["Golem HRTF","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
@@ -146,7 +146,7 @@ setLayout();
 const 
     // Short text, center-aligned, useful for a little side info, credits, links to measurement setup, etc. 
     simpleAbout = `
-        <p class="center">This graph database is maintained by HarutoHiroki with frequency responses generated via an "IEC60318-4"-compliant ear simulator. This web software is based on a heavily modified version of the <a href="https://github.com/mlochbaum/CrinGraph">CrinGraph</a> open source software project, with <a href="https://www.teachmeaudio.com/mixing/techniques/audio-spectrum">Audio Spectrum</a>'s definition source.</p>
+        <p class="center">Blocked canal measurements captured at 85DB using a TOM-1537L-HD capsule</p>
     `
     ;
     // Which of the above variables to actually insert into the page
