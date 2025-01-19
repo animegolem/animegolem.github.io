@@ -37,9 +37,9 @@ body.dark-mode {
     
     --background-color-inputs: hsl(194, 14%, 40%);  
     
-    --font-color-primary: hsl(0, 0%, 80%);
-    --font-color-secondary: hsl(0, 0%, 0%);
-    --font-color-inputs: hsl(0, 0%, 75%);
+    --font-color-primary: hsl(44, 87%, 94%);
+    --font-color-secondary: hsl(192, 100%, 11%);
+    --font-color-inputs: hsl(46, 42%, 88%);
     
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: monospace;
