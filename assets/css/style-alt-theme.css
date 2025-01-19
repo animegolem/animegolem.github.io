@@ -34,7 +34,7 @@ body.dark-mode {
     --background-color-contrast-more: hsl(192, 61%, 18%);
     --background-color-graph: hsl(192, 100%, 11%);
     
-    --background-color-inputs: hsl(0, 0%, 100%);
+    --background-color-inputs: hsl(180, 7%, 60%);
     
     --font-color-primary: hsl(0, 0%, 80%);
     --font-color-secondary: hsl(0, 0%, 0%);
