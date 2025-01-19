@@ -11,8 +11,8 @@
     
     --background-color-inputs: hsl(0, 0%, 100%);
     
-    --font-color-primary: hsl(180, 7%, 60%);
-    --font-color-secondary: hsl(186, 8%, 55%);
+    --font-color-primary: hsl(0, 0%, 10%);
+    --font-color-secondary: hsl(0, 0%, 100%);
     --font-color-inputs: hsl(0, 0%, 50%);
     
     --font-primary: 'Open Sans', sans-serif;
