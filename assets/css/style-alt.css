@@ -329,7 +329,7 @@ header.header {
     box-sizing: border-box;
     flex: 48px 0 0;
     
-    background-color: #000000;
+    background-color: hsl(192, 100%, 11%);
 }
 
 button.header-button {
