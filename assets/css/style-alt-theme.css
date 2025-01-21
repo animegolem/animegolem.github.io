@@ -17,6 +17,8 @@
     
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: monospace;
+
+    --header-links-color: hsl(192, 81%, 14%);
     
     --scrollbar-color: 255,255,255;
     --scrollbar-accent: 0,0,0;
