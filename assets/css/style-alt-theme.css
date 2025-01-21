@@ -30,15 +30,15 @@ body.dark-mode {
     --accent-color: hsl(194, 14%, 40%);
     --accent-color-contrast: hsl(196, 13%, 45%);
 
-    --background-color: hsl(192, 100%, 11%);
-    --background-color-contrast: hsl(192, 100%, 11%);
+    --background-color: hsl(192, 81%, 14%);
+    --background-color-contrast: hsl(192, 81%, 14%);
     --background-color-contrast-more: hsl(192, 61%, 18%);
-    --background-color-graph: hsl(192, 81%, 14%);
+    --background-color-graph: hsl(192, 100%, 11%);
     
     --background-color-inputs: hsl(194, 14%, 40%);  
     
     --font-color-primary: hsl(44, 87%, 94%);
-    --font-color-secondary: hsl(192, 100%, 11%);
+    --font-color-secondary: hsl(192, 81%, 14%);
     --font-color-inputs: hsl(46, 42%, 88%);
     
     --font-primary: 'Open Sans', sans-serif;
