@@ -1804,7 +1804,7 @@ input.search {
     border-radius: 6px;
     outline: none;
     
-    color: var(--font-color-inputs);
+    color: var(--font-color-secondary);
     font-family: var(--font-secondary);
     font-size: 11px;
     line-height: 1em;
