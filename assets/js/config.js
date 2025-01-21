@@ -99,9 +99,9 @@ function watermark(svg) {
 
     // Extra flair
     svg.append("g")
-        .attr("opacity",0.3)
+        .attr("opacity",0.2)
         .append("text")
-        .attrs({x:765, y:314, "font-size":12, "text-anchor":"end", "class":"graph-name"})
+        .attrs({x:765, y:314, "font-size":14, "text-anchor":"end", "class":"graph-name"})
         .text("DIY Pirate Blocked Canal");
 }
 
