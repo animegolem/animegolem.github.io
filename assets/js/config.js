@@ -218,7 +218,7 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoTexts = "Blocked Canal",
+let headerLogoText = "Blocked Canal",
     headerLogoImgUrl = "assets/images/transparent.svg",
     headerLinks = [
     {
@@ -226,7 +226,7 @@ let headerLogoTexts = "Blocked Canal",
         url: "https://github.com/animegolem/pirate-extensions-extended"
     }
 ];
-let whichHeaderLogoTextToUse = headerLogoTexts;
+let whichHeaderLogoTextToUse = headerLogoText;
 let whichHeaderLogoImgUrlToUse = headerLogoImgUrl;
 let whichHeaderLinksToUse = headerLinks;
 
