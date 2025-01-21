@@ -146,7 +146,7 @@ setLayout();
 const 
     // Short text, center-aligned, useful for a little side info, credits, links to measurement setup, etc. 
     simpleAbout = `
-        <p class="center">Blocked canal measurements captured at 85DB using a TOM-1537L-HD capsule</p>
+    Blocked canal measurements captured at 85DB using a TOM-1537L-HD capsule
     `
     ;
     // Which of the above variables to actually insert into the page
@@ -217,8 +217,8 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "Blocked Canal",
-    headerLogoImgUrl = "assets/images/transparent.svg",
+let headerLogoText = "",
+    headerLogoImgUrl = "assets/images/golem.svg",
     headerLinks = [
     {
         name: "How to build your own PIRATE in-ear microphones (WIP)",
