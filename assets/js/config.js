@@ -221,7 +221,7 @@ let headerLogoText = "",
     headerLogoImgUrl = "assets/images/transparent.svg",
     headerLinks = [
     {
-        name: "How to build your own PIRATE in-ear microphones (WIP)",
+        name: "How to build your own PIRATE in-ear microphones",
         url: "https://github.com/animegolem/pirate-extensions-extended"
     }
 ];
