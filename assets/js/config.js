@@ -218,7 +218,7 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "",
-    headerLogoImgUrl = "assets/images/transparent.svg",
+    headerLogoImgUrl = "assets/images/header.svg",
     headerLinks = [
     {
         name: "How to build your own PIRATE in-ear microphones",
