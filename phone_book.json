@@ -30,5 +30,11 @@
     "phones": [
         {"name":"MDR-MV1","file":["MDR-MV1"]}
     ]
+  },
+  {
+    "name":   "Stax",
+    "phones": [
+        {"name":"SR-404","file":["SR-404"]}
+    ]
   }
 ]
