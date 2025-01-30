@@ -54,7 +54,7 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        default_bass_shelf = 2,                         // Default Custom DF bass shelf value
        default_tilt = -0.8,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
-       default_treble = -5,                             // Default Custom DF treble gain value
+       default_treble = -2,                             // Default Custom DF treble gain value
        tiltableTargets = ["Golem HRTF","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
        compTargets = ["Golem HRTF","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
@@ -218,7 +218,7 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "",
-    headerLogoImgUrl = "assets/images/header.png",
+    headerLogoImgUrl = "assets/images/headerv2.png",
     headerLinks = [
     {
         name: "How to build your own PIRATE in-ear microphones",
