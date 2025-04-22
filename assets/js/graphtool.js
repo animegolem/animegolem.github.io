@@ -102,7 +102,7 @@ doc.html(`
             <span>Tilt (dB/Oct)</span>
           </div>
           <div>
-            <input type="number" inputmode="decimal" id="cusdf-bass" value="`+ default_bass_shelf +`" step="1""></input>
+            <input type="number" inputmode="decimal" id="cusdf-bass" value="`+ default_bass_shelf +`" step="0.1""></input>
             <span>Bass (dB)</span>
           </div>
           <div>
