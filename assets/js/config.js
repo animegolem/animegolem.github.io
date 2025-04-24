@@ -38,7 +38,7 @@ const init_phones = ["Golem HRTF Target", "MDR-MV1"],// Optional. Which graphs t
 
 // Specify which targets to display
 const targets = [
-    { type:"Golem HRTFs",  files:["Golem HRTF", "waitgodwhat"] },
+    { type:"Golem HRTFs",  files:["Golem HRTF", "waitgodwhat", "pleasestopgodwhy"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
@@ -51,12 +51,12 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "Golem HRTF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 1,                         // Default Custom DF bass shelf value
+       default_bass_shelf = 0,                         // Default Custom DF bass shelf value
        default_tilt = 0,                            // Default Custom DF tilt value
        default_ear = -0,                                // Default Custom DF ear gain value
-       default_treble = -10,                             // Default Custom DF treble gain value
-       tiltableTargets = ["Golem HRTF", "waitgodwhat","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
-       compTargets = ["Golem HRTF", "waitgodwhat", "ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
+       default_treble = 0,                             // Default Custom DF treble gain value
+       tiltableTargets = ["Golem HRTF", "waitgodwhat", "pleasestopgodwhy", "ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
+       compTargets = ["Golem HRTF", "waitgodwhat", "pleasestopgodwhy", "ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
