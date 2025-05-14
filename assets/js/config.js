@@ -38,7 +38,7 @@ const init_phones = ["pleasestopgodwhy Target", "MDR-MV1"],// Optional. Which gr
 
 // Specify which targets to display
 const targets = [
-    { type:"Golem HRTFs",  files:["Golem HRTF", "waitgodwhat", "pleasestopgodwhy"] },
+    { type:"Golem HRTFs",  files:["Golem HRTF", "pleasestopgodwhy"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
