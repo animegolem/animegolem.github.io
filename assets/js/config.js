@@ -38,7 +38,7 @@ const init_phones = ["pleasestopgodwhy Target", "MDR-MV1"],// Optional. Which gr
 
 // Specify which targets to display
 const targets = [
-    { type:"Golem HRTFs",  files:["Golem HRTF", "pleasestopgodwhy"] },
+    { type:"Golem HRTFs",  files:["Golem HRTF"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
@@ -51,10 +51,10 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "Golem HRTF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 0,                         // Default Custom DF bass shelf value
-       default_tilt = 0,                            // Default Custom DF tilt value
+       default_bass_shelf = 2,                         // Default Custom DF bass shelf value
+       default_tilt = -1,                            // Default Custom DF tilt value
        default_ear = -0,                                // Default Custom DF ear gain value
-       default_treble = 0,                             // Default Custom DF treble gain value
+       default_treble = -2,                             // Default Custom DF treble gain value
        tiltableTargets = ["Golem HRTF", "waitgodwhat", "pleasestopgodwhy", "ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
        compTargets = ["Golem HRTF", "waitgodwhat", "pleasestopgodwhy", "ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
@@ -267,4 +267,5 @@ let tutorialDefinitions = [
         description: 'The Treble range is composed entirely of harmonics and is responsible for sparkle and air of a sound. Over boosting in this region can accentuate hiss and cause ear fatigue.'
     }
 ]
+
 let whichTutorialDefinitionsToUse = tutorialDefinitions;
