@@ -38,7 +38,7 @@ const init_phones = ["pleasestopgodwhy Target", "MDR-MV1"],// Optional. Which gr
 
 // Specify which targets to display
 const targets = [
-    { type:"Golem HRTFs",  files:["Golem HRTF"] },
+    { type:"Golem HRTFs",  files:["Golem HRTF", "Right Only", "Left Only"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
@@ -269,3 +269,4 @@ let tutorialDefinitions = [
 ]
 
 let whichTutorialDefinitionsToUse = tutorialDefinitions;
+
